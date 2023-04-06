@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1230</width>
+    <height>810</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Signal Viewer</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Test/ICONS/wicon.jpg</normaloff>Test/ICONS/wicon.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>480</y>
+      <width>1201</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>20</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="tab_1">
+     <attribute name="title">
+      <string>Channel 1</string>
+     </attribute>
+     <widget class="QCheckBox" name="hide_1">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>75</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Hide Signal</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelY_1">
+      <property name="geometry">
+       <rect>
+        <x>478</x>
+        <y>155</y>
+        <width>42</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Scroll&lt;br/&gt;Y-Axis&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QSlider" name="speedSlider_1">
+      <property name="geometry">
+       <rect>
+        <x>488</x>
+        <y>75</y>
+        <width>181</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_1">
+      <property name="geometry">
+       <rect>
+        <x>658</x>
+        <y>165</y>
+        <width>181</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="play_1">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>160</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>PLAY</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Test/ICONS/play1.png</normaloff>Test/ICONS/play1.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="open_1">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>66</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>OPEN</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Test/ICONS/open1.PNG</normaloff>Test/ICONS/open1.PNG</iconset>
+      </property>
+     </widget>
+     <widget class="QSlider" name="verticalSlider_1">
+      <property name="geometry">
+       <rect>
+        <x>546</x>
+        <y>125</y>
+        <width>22</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pause_1">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>160</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>PAUSE</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Test/ICONS/pause1.png</normaloff>Test/ICONS/pause1.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="zoom_out_1">
+      <property name="geometry">
+       <rect>
+        <x>333</x>
+        <y>160</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>5</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ZOOM
+OUT</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Test/ICONS/zoomout1.png</normaloff>Test/ICONS/zoomout1.png</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelX_1">
+      <property name="geometry">
+       <rect>
+        <x>588</x>
+        <y>155</y>
+        <width>42</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Scroll&lt;br/&gt;X-Axis&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="zoom_in_1">
+      <property name="geometry">
+       <rect>
+        <x>232</x>
+        <y>160</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>5</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ZOOM
+IN</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Test/ICONS/zoomin1.png</normaloff>Test/ICONS/zoomin1.png</iconset>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelSpeed_1">
+      <property name="geometry">
+       <rect>
+        <x>358</x>
+        <y>75</y>
+        <width>105</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Speed Control&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxColor_1">
+      <property name="geometry">
+       <rect>
+        <x>168</x>
+        <y>75</y>
+        <width>121</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string>RED</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>RED</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Green</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Blue</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBox_ColorPalette_1">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>220</y>
+        <width>161</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string>Color palette 1</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Color palette 1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Color palette 2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Color palette 3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Color palette 4</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Color palette 5</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="labelSpecVMax_1">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>180</y>
+        <width>36</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>V-Max</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelSpecVMin_1">
+      <property name="geometry">
+       <rect>
+        <x>1110</x>
+        <y>180</y>
+        <width>33</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>V-Min</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="SpecVMinSlider_1">
+      <property name="geometry">
+       <rect>
+        <x>1110</x>
+        <y>40</y>
+        <width>22</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="SpecVMaxSlider_1">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>40</y>
+        <width>22</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Channel 2</string>
+     </attribute>
+     <widget class="QLabel" name="labelSpeed_2">
+      <property name="geometry">
+       <rect>
+        <x>358</x>
+        <y>75</y>
+        <width>105</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Speed Control&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelY_2">
+      <property name="geometry">
+       <rect>
+        <x>478</x>
+        <y>155</y>
+        <width>42</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Scroll&lt;br/&gt;Y-Axis&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="zoom_in_2">
+      <property name="geometry">
+       <rect>
+        <x>232</x>
+        <y>160</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>5</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ZOOM
+IN</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Test/ICONS/zoomin1.png</normaloff>Test/ICONS/zoomin1.png</iconset>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="hide_2">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>75</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Hide Signal</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="zoom_out_2">
+      <property name="geometry">
+       <rect>
+        <x>333</x>
+        <y>160</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>5</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ZOOM
+OUT</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Test/ICONS/zoomout1.png</normaloff>Test/ICONS/zoomout1.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="open_2">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>66</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>OPEN</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Test/ICONS/open1.PNG</normaloff>Test/ICONS/open1.PNG</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="play_2">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>160</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>PLAY</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Test/ICONS/play1.png</normaloff>Test/ICONS/play1.png</iconset>
+      </property>
+     </widget>
+     <widget class="QSlider" name="speedSlider_2">
+      <property name="geometry">
+       <rect>
+        <x>488</x>
+        <y>75</y>
+        <width>181</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_2">
+      <property name="geometry">
+       <rect>
+        <x>658</x>
+        <y>165</y>
+        <width>181</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxColor_2">
+      <property name="geometry">
+       <rect>
+        <x>168</x>
+        <y>75</y>
+        <width>121</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string>RED</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>RED</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Green</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Blue</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="labelX_2">
+      <property name="geometry">
+       <rect>
+        <x>588</x>
+        <y>155</y>
+        <width>42</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Scroll&lt;br/&gt;X-Axis&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QSlider" name="verticalSlider_2">
+      <property name="geometry">
+       <rect>
+        <x>546</x>
+        <y>125</y>
+        <width>22</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pause_2">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>160</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>PAUSE</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Test/ICONS/pause1.png</normaloff>Test/ICONS/pause1.png</iconset>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_ColorPalette_2">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>220</y>
+        <width>161</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string>Color palette 1</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Color palette 1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Color palette 2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Color palette 3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Color palette 4</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Color palette 5</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="labelSpecVMax_2">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>180</y>
+        <width>36</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>V-Max</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelSpecVMin_2">
+      <property name="geometry">
+       <rect>
+        <x>1110</x>
+        <y>180</y>
+        <width>33</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>V-Min</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="SpecVMinSlider_2">
+      <property name="geometry">
+       <rect>
+        <x>1110</x>
+        <y>40</y>
+        <width>22</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="SpecVMaxSlider_2">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>40</y>
+        <width>22</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Channel 3</string>
+     </attribute>
+     <widget class="QLabel" name="labelY_3">
+      <property name="geometry">
+       <rect>
+        <x>478</x>
+        <y>155</y>
+        <width>42</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Scroll&lt;br/&gt;Y-Axis&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_3">
+      <property name="geometry">
+       <rect>
+        <x>658</x>
+        <y>165</y>
+        <width>181</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxColor_3">
+      <property name="geometry">
+       <rect>
+        <x>168</x>
+        <y>75</y>
+        <width>121</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string>RED</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>RED</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Green</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Blue</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pause_3">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>160</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>PAUSE</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Test/ICONS/pause1.png</normaloff>Test/ICONS/pause1.png</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelX_3">
+      <property name="geometry">
+       <rect>
+        <x>588</x>
+        <y>155</y>
+        <width>42</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Scroll&lt;br/&gt;X-Axis&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QSlider" name="speedSlider_3">
+      <property name="geometry">
+       <rect>
+        <x>488</x>
+        <y>75</y>
+        <width>181</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="zoom_in_3">
+      <property name="geometry">
+       <rect>
+        <x>232</x>
+        <y>160</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>5</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ZOOM
+IN</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Test/ICONS/zoomin1.png</normaloff>Test/ICONS/zoomin1.png</iconset>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="play_3">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>160</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>PLAY</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Test/ICONS/play1.png</normaloff>Test/ICONS/play1.png</iconset>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="hide_3">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>75</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Hide Signal</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="zoom_out_3">
+      <property name="geometry">
+       <rect>
+        <x>333</x>
+        <y>160</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>5</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ZOOM
+OUT</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Test/ICONS/zoomout1.png</normaloff>Test/ICONS/zoomout1.png</iconset>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_ColorPalette_3">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>220</y>
+        <width>161</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string>Color palette 1</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Color palette 1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Color palette 2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Color palette 3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Color palette 4</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Color palette 5</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="open_3">
+      <property name="geometry">
+       <rect>
+        <x>29</x>
+        <y>66</y>
+        <width>93</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>OPEN</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Test/ICONS/open1.PNG</normaloff>Test/ICONS/open1.PNG</iconset>
+      </property>
+     </widget>
+     <widget class="QSlider" name="verticalSlider_3">
+      <property name="geometry">
+       <rect>
+        <x>546</x>
+        <y>125</y>
+        <width>22</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelSpeed_3">
+      <property name="geometry">
+       <rect>
+        <x>358</x>
+        <y>75</y>
+        <width>105</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Speed Control&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelSpecVMax_3">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>180</y>
+        <width>36</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>V-Max</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelSpecVMin_3">
+      <property name="geometry">
+       <rect>
+        <x>1110</x>
+        <y>180</y>
+        <width>33</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>V-Min</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="SpecVMinSlider_3">
+      <property name="geometry">
+       <rect>
+        <x>1110</x>
+        <y>40</y>
+        <width>22</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="SpecVMaxSlider_3">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>40</y>
+        <width>22</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>11</y>
+      <width>1201</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QWidget" name="">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QGraphicsView" name="graphicsView_1"/>
+      </item>
+      <item>
+       <widget class="QGraphicsView" name="graphicsView_2">
+        <property name="interactive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGraphicsView" name="graphicsView_3">
+        <property name="interactive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTabWidget" name="tabWidget_2">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabSpec_1">
+      <attribute name="title">
+       <string>Channel 1</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QGraphicsView" name="graphicsView_Spec_1"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabSpec_2">
+      <attribute name="title">
+       <string>Channel 2</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QGraphicsView" name="graphicsView_Spec_2"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabSpec_3">
+      <attribute name="title">
+       <string>Channel 3</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QGraphicsView" name="graphicsView_Spec_3"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1230</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuOpen">
+     <property name="title">
+      <string>Open</string>
+     </property>
+     <addaction name="actionChannel_1"/>
+     <addaction name="actionChannel_2"/>
+     <addaction name="actionChannel_3"/>
+    </widget>
+    <addaction name="menuOpen"/>
+    <addaction name="actionGenerate_PDF"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionChannel_1">
+   <property name="text">
+    <string>Channel_1</string>
+   </property>
+  </action>
+  <action name="actionChannel_2">
+   <property name="text">
+    <string>Channel 2</string>
+   </property>
+  </action>
+  <action name="actionChannel_3">
+   <property name="text">
+    <string>Channel 3</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionPdfChannel_1">
+   <property name="text">
+    <string>Channel 1</string>
+   </property>
+  </action>
+  <action name="actionPdfChannel_2">
+   <property name="text">
+    <string>Channel 2</string>
+   </property>
+  </action>
+  <action name="actionPdfChannel_3">
+   <property name="text">
+    <string>Channel 3</string>
+   </property>
+  </action>
+  <action name="actionGenerate_PDF">
+   <property name="text">
+    <string>Generate PDF</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

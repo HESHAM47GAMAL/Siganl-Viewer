@@ -4,6 +4,7 @@
 - [GUI](#GUI)
 - [features](#Features)
 - [Get Start](#Get-Start)
+- [Demo](#Demo)
 
 ## Description 
 
@@ -23,6 +24,11 @@
 <p>⚡scroll using button and from graph
 
 ## GET-Start
+<p> What do you Wait 🙄🙄 get clone and Try 👏
 
 
+## Demo 
+<p align = "center "
+  <img  src="https://github.com/HESHAM47GAMAL/Siganl-Viewer/blob/main/GIF/Loading%20Signals.gif" >
+</p>
 

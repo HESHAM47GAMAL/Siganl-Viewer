@@ -16,6 +16,11 @@
 </p>
 
 ## Features
+⚡open button for each channel 🤹‍♀️
+⚡customize color for each signal from channel 
+⚡conrol speed of viewing signal 🏃‍♂️
+⚡basic functionallity (▶⏸🔍)
+⚡scroll using button and from graph
 
 ## GET-Start
 

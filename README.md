@@ -28,7 +28,7 @@
 
 
 ## Demo 
-<p align = "center "
-  <img  src="https://github.com/HESHAM47GAMAL/Siganl-Viewer/blob/main/GIF/Loading%20Signals.gif" >
+  <p align="center">
+  <img src="https://github.com/HESHAM47GAMAL/Siganl-Viewer/blob/main/GIF/Loading%20Signals.gif">
 </p>
 
